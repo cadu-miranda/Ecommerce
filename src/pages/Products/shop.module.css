@@ -1,0 +1,106 @@
+.sort {
+  height: 50px;
+  border: 0;
+  color: #d9dee9;
+  border-radius: 10px;
+  background-color: #24262b;
+  padding: 0 16px;
+  font-weight: bold;
+}
+
+.searchbar {
+  height: 50px;
+  width: 420px;
+  padding: 16px 16px 16px 42px;
+  margin: 0;
+  border: 0;
+  color: #d9dee9;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: #24262b;
+}
+
+/* ########### LAYOUT ############## */
+
+.container {
+  min-height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #16181d;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* ####### NAVBAR ################## */
+.navbar {
+  background-color: #16181d;
+
+  height: 70px;
+  padding: 0 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid rgba(112, 112, 112, 0.24);
+}
+
+.navbar__logo {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+}
+
+.button {
+  width: 80px;
+  height: 40px;
+  border-radius: 50%;
+
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  color: white;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+
+  margin-top: 50px;
+
+  /* background-color: red; */
+}
+.content__sidebar {
+  flex-basis: 320px;
+  background-color: #24262b;
+  padding: 26px;
+  border-radius: 20px;
+  margin-right: 36px;
+}
+.content__main {
+  flex: 1;
+  /* background-color: orangered; */
+}
+.content__main__inputbox {
+  height: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: green; */
+}
+.content__main__grid {
+  margin-top: 50px;
+  /* background-color: blue; */
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* height: 360px; */
+  gap: 16px;
+}
+.footer {
+  margin-top: 68px;
+  display: flex;
+  padding: 68px 0;
+}

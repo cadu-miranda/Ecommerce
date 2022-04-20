@@ -1,0 +1,47 @@
+.container {
+  min-height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #16181d;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding-inline: 1rem;
+
+  display: flex;
+  width: 100%;
+}
+
+.new_card_wrapper {
+  display: flex;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .new_card_wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+input[type="text"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: 0;
+  height: 40px;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}

@@ -1,0 +1,32 @@
+.sidebar {
+  flex-basis: 320px;
+  background-color: #24262b;
+  padding: 26px;
+  border-radius: 20px;
+  margin-right: 36px;
+}
+
+.title {
+  font-size: 22;
+  margin-bottom: 26px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar button:hover {
+  cursor: pointer;
+}
+
+.navbar button:not(last-child) {
+  margin-right: 16px;
+}
+
+.navbar__buttonbox_button_icon {
+  background-color: red;
+  color: white;
+}
+
+.navbar__buttonbox {
+}
+.navbar__buttonbox_button {
+}

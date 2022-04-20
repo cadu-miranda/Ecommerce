@@ -1,0 +1,53 @@
+.navbar {
+  background-color: #16181d;
+
+  height: 70px;
+  padding: 0 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid rgba(112, 112, 112, 0.24);
+}
+
+.navbar__logo {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar button:hover {
+  cursor: pointer;
+}
+
+.navbar button:not(last-child) {
+  margin-right: 16px;
+}
+
+.navbar__buttonbox_button_icon {
+  background-color: red;
+  color: white;
+}
+
+.navbar__buttonbox {
+  display: flex;
+  align-items: center;
+}
+.navbar__buttonbox_button {
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  color: white;
+  font-weight: bold;
+}
