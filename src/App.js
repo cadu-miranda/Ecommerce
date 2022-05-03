@@ -4,10 +4,10 @@ import Checkout from "./pages/Checkout";
 
 import { CartProvider } from "./hooks/useCart";
 
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Products />} />
         <Route path="/product/slug" element={<Product />} />
+        {/* Slug - nome do produto . Size (P, M, G). Controle (Quantidade) */}
         <Route path="/cart" element={<Checkout />} />
       </Routes>
       <ToastContainer />

@@ -9,18 +9,15 @@ const Checkout = () => {
   const [formaDePagamentoSelecionada, setFormaDePagamentoSelecionada] =
     useState(1);
   const [nomeCartao, setNomeCartao] = useState("");
+  const [cvc, setCvc] = useState("");
+  const [expiryDate, setExpiryDate] = useState("");
+  const [focus, setFocus] = useState("");
+  const [cardNumber, setCardNumber] = useState("");
 
   const handleChange = (event) => {
     setNomeCartao(event.target.value);
   };
 
-  const state = {
-    cvc: "",
-    expiry: "",
-    focus: "",
-    name: "",
-    number: "",
-  };
   return (
     <div className={styles.container}>
       <Navbar />
@@ -106,11 +103,11 @@ const Checkout = () => {
         >
           <div className={styles.new_card_wrapper}>
             <Cards
-              cvc={state.cvc}
-              expiry={state.expiry}
-              focused={state.focus}
+              cvc={cvc}
+              expiry={expiryDate}
+              focused={focus}
               name={nomeCartao}
-              number={state.number}
+              number={cardNumber}
             />
             <div
               style={{
@@ -131,6 +128,8 @@ const Checkout = () => {
                   placeholder="Nome impresso no cartão"
                 />
                 <input
+                  onChange={(e) => setCardNumber(e.target.value)}
+                  maxLength={16}
                   type="text"
                   style={{ marginTop: 12 }}
                   placeholder="Número do cartão"
