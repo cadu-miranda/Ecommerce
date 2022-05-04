@@ -1,5 +1,12 @@
 .footer {
   margin-top: 68px;
-  display: flex;
-  padding: 68px 0;
+  background-color: #070707;
+  height: 300px;
+}
+
+.footer img {
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
 }

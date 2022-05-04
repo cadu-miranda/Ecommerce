@@ -3,15 +3,16 @@ import styles from "./navbar.module.css";
 
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import MindLogo from "../../assets/images/header-img.svg";
 
-const Navbar = () => {
+const Header = () => {
   return (
     <nav className={styles.navbar}>
-      <p className={styles.navbar__logo}>Logo</p>
+      <img src={MindLogo} alt="Logo da Mind Consulting" />
       <div className={styles.navbar__buttonbox}>
         <Link to="/cart">
           <button className={styles.button}>
-            <AiOutlineShoppingCart color="white" fontSize={22} />
+            <AiOutlineShoppingCart fontSize={22} />
           </button>
         </Link>
       </div>
@@ -19,4 +20,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;

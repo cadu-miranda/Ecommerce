@@ -1,4 +1,9 @@
 .filter_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-height: 150px;
+  flex-wrap: wrap;
   padding-bottom: 12px;
   border-bottom: 2px solid rgba(112, 112, 112, 0.24);
 }
@@ -8,8 +13,10 @@
   font-weight: bold;
   margin-bottom: 12px;
   color: white;
+  margin-top: 8px;
 }
 
 .option_wrapper {
   margin-top: 4px;
+  padding-block: 4px;
 }

@@ -1,16 +1,16 @@
 .sidebar {
-  flex-basis: 320px;
-  background-color: #24262b;
+  min-width: 320px;
+  background-color: #080809;
   padding: 26px;
   border-radius: 20px;
   margin-right: 36px;
 }
 
 .title {
-  font-size: 22;
+  font-size: 22px;
   margin-bottom: 26px;
   font-weight: bold;
-  color: white;
+  color: #fff;
 }
 
 .navbar button:hover {
@@ -23,10 +23,5 @@
 
 .navbar__buttonbox_button_icon {
   background-color: red;
-  color: white;
-}
-
-.navbar__buttonbox {
-}
-.navbar__buttonbox_button {
+  color: #fff;
 }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./checkout.module.css";
-import Navbar from "../../components/Navbar";
+import Header from "../../components/Header";
 
 import Cards from "react-credit-cards";
 import "react-credit-cards/es/styles-compiled.css";
@@ -20,7 +20,7 @@ const Checkout = () => {
 
   return (
     <div className={styles.container}>
-      <Navbar />
+      <Header />
       <div className={styles.content} style={{ marginTop: 32 }}>
         <div className={styles.grid_item} style={{ flex: 1 }}>
           <p style={{ fontSize: 22, fontWeight: "bold", color: "white" }}>

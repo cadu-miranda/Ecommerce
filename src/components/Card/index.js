@@ -12,11 +12,19 @@ const Card = ({ title, price, image, category, description, onClick }) => {
       <img src={image} alt="title" />
       <div className={styles.card__content}>
         <p className={styles.title}>{title}</p>
-        <p className={styles.title}>{category}</p>
-        <p className={styles.price}>{preco}</p>
-        <button onClick={onClick} className={styles.button}>
-          Buy now!
-        </button>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            minWidth: "100%",
+          }}
+        >
+          <p className={styles.price}>{preco}</p>
+          <button onClick={onClick} className={styles.button}>
+            Comprar
+          </button>
+        </div>
       </div>
     </div>
   );

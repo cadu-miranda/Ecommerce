@@ -6,24 +6,39 @@ const Sidebar = () => {
   return (
     <aside className={styles.sidebar}>
       <p className={styles.title}>Filtros</p>
+      <div style={{ marginTop: 16 }}>
+        <Filter
+          name="Categoria"
+          options={[
+            { name: "Blusas" },
+            { name: "Camisas" },
+            { name: "Calças" },
+          ]}
+        />
+      </div>
+      <div style={{ marginTop: 16 }}>
+        <Filter
+          name="Tamanho"
+          options={[
+            { name: "PP" },
+            { name: "P" },
+            { name: "M" },
+            { name: "G" },
+            { name: "GG" },
+          ]}
+        />
+      </div>
       <div>
         <Filter
-          name="Gender"
-          options={[{ name: "Male" }, { name: "Female" }]}
+          name="Gênero"
+          options={[
+            { name: "Masculino" },
+            { name: "Feminino" },
+            { name: "Unissex" },
+          ]}
         />
       </div>
-      <div style={{ marginTop: 16 }}>
-        <Filter
-          name="Product Type"
-          options={[{ name: "Shirts" }, { name: "Pants" }]}
-        />
-      </div>
-      <div style={{ marginTop: 16 }}>
-        <Filter
-          name="Size"
-          options={[{ name: "S" }, { name: "M" }, { name: "L" }]}
-        />
-      </div>
+
       <div className={styles.checkbox_group}></div>
     </aside>
   );

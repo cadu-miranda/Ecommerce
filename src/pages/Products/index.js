@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./shop.module.css";
-import Navbar from "../../components/Navbar";
+import Header from "../../components/Header";
 import Sidebar from "../../components/Sidebar";
 import Footer from "../../components/Footer";
 import Card from "../../components/Card";
@@ -31,35 +31,41 @@ const Products = () => {
 
   return (
     <div className={styles.container}>
-      <Navbar />
+      <Header />
       <div className={styles.content}>
-        <Sidebar />
         <main className={styles.content__main}>
           <div className={styles.content__main__inputbox}>
-            <input
-              className={styles.searchbar}
-              placeholder="Search products..."
-            />
-            <button className={styles.sort}>Sort by popularity</button>
+            <div className={styles.filter_input}>
+              <FaSearch style={{ marginLeft: 8 }} color="#000" />
+              <input
+                type="search"
+                className={styles.searchbar}
+                placeholder="Pesquisar..."
+              />
+            </div>
+            <button className={styles.sort}>Menor preço</button>
           </div>
-          {/* Grid */}
-          <div className={styles.content__main__grid}>
-            {produtos.map((product) => {
-              console.log(product);
-              return (
-                <Card
-                  key={product.id}
-                  title={product.title}
-                  price={product.price}
-                  image={product.image}
-                  category={product.category}
-                  description={product.description}
-                  onClick={() => addProduct(product.id)}
-                />
-              );
-            })}
-            {/* Produtos */}
-          </div>{" "}
+          <div style={{ display: "flex", marginTop: 70 }}>
+            <div className={styles.sidebar_main}>
+              <Sidebar />
+            </div>
+            <div className={styles.content__main__grid}>
+              {produtos.map((product) => {
+                console.log(product);
+                return (
+                  <Card
+                    key={product.id}
+                    title={product.title}
+                    price={product.price}
+                    image={product.image}
+                    category={product.category}
+                    description={product.description}
+                    onClick={() => addProduct(product.id)}
+                  />
+                );
+              })}
+            </div>
+          </div>
         </main>
       </div>
       <Footer />
